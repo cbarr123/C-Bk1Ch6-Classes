@@ -31,16 +31,21 @@ namespace list_employees
             E003.title = "Warehouse Lead";
             E003.startDate = new DateTime(2017-10-12);
         }
+
+        // Assign the employees to the company
+        TireWorld.EmployeeList.Add(E001);
+        TireWorld.EmployeeList.Add(E002);
+        TireWorld.EmployeeList.Add(E003);
+
+        //Iterate the company's employee list and generate the simple report shown above
+        TireWorld.ListEmployees();
         
 
 
 
-        // Assign the employees to the company
 
-        /*
-            Iterate the company's employee list and generate the
-            simple report shown above
-        */
+        
+        
     }
 }
 }

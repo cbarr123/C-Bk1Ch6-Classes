@@ -10,7 +10,7 @@ namespace list_employees
         public DateTime _dateFounded{get;}
 
         // Create a public property for holding a list of current employees
-        public List<Employee> Employee = new List<Employee>();
+        public List<Employee> EmployeeList = new List<Employee>();
 
         /*
             Create a constructor method that accepts two arguments:
@@ -27,13 +27,10 @@ namespace list_employees
         //The Company class should also have a ListEmployees() method which outputs the name of each employee to the console.
         public void ListEmployees()
         {
-            foreach (Employee employee in Employee)
+            foreach (Employee employee in EmployeeList)
             {
-
+                Console.WriteLine($"{employee.firstName} {employee.lastName} works for {_companyName} as {employee.title} since {employee.startDate}");
             }
         }
-
-
-
     }
 }
